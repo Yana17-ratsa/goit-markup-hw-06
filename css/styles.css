@@ -50,6 +50,7 @@ address {
 .header {
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+    padding: 16px;
 }
 
 
@@ -149,6 +150,13 @@ address {
     color: #404BBF;
 }
 
+.header-icon-open {
+    border: none;
+    background-color: transparent;
+}
+
+.header-mob-icon-open {}
+
 
 .mob-menu {
     position: fixed;
@@ -174,12 +182,29 @@ address {
     display: block;
     margin-left: auto;
     margin-bottom: 24px;
+    border: 1px solid #E7E9FC;
+    border-radius: 50%;
 }
 
-.mob-btn-icon {}
+.mob-btn-icon {
+    fill: #2E2F42;
+}
 
 .mob-list {
     margin-bottom: 50px;
+}
+
+.mob-list-link {
+    color: #2E2F42;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.1;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+}
+
+.mob-studio {
+    color: #404BBF;
 }
 
 .mob-list-item:not(:last-child){
@@ -206,6 +231,10 @@ address {
         font-weight: 500;
         line-height: 1.2;
         letter-spacing: 0.02em;
+}
+
+.mob-phone-link {
+    color: #4D5AE5;
 }
 
 .mob-list-link {
@@ -253,7 +282,8 @@ address {
 
 .hero {
     background-color:  #2E2F42;
-    padding: 72px 16px;
+    padding-top: 72px;
+    padding-bottom: 72px;
     background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg-mob.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -270,6 +300,8 @@ address {
 }
 
 .hero-container {
+    padding-right: 16px;
+    padding-left: 16px;
 }
 
 .hero-text {
@@ -279,7 +311,8 @@ address {
         font-weight: 700;
         line-height: 1.11;
         letter-spacing: 0.02em;
-        max-width: 496px;
+        /* max-width: 496px; */
+        max-width: 288px;
         margin-right: auto;
         margin-left: auto;
         margin-bottom: 72px;
@@ -368,6 +401,7 @@ address {
         font-size: 36px;
         font-weight: 700;
         text-transform: capitalize;
+        text-align: center;
 
 }
 
@@ -384,12 +418,16 @@ address {
 /**========TEAM========*/
 .team {
     background-color: #F4F4FD;
-    padding: 96px 28px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
-/* .team > .container {
-    max-width: 264px;
-} */
+
+@media screen  and (max-width:767) {
+    .team-container {
+        width: 296px;
+    }
+}
 
 .team-title {
     color:  #2E2F42;
@@ -405,7 +443,7 @@ address {
 .team-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 72px
 }
 
 .team-item {
@@ -585,7 +623,8 @@ li .container {
 
 .footer {
     background-color: #2E2F42;
-    padding: 96px 16px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .footer-container {
@@ -597,7 +636,7 @@ li .container {
 }
 
 .footer-first-box {
-    margin-right: 120px;
+    /* margin-right: 120px; */
 }
 
 .footer-logo {
@@ -610,8 +649,8 @@ li .container {
         text-transform: uppercase;
         display: inline-block;
         margin-bottom: 16px;
-
-
+        /* text-align: left; */
+        text-align: center;
 }
 
 .footer-logo-blue {
@@ -623,7 +662,7 @@ li .container {
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
-        max-width: 264px;
+        max-width: 288px;
 }
 
 .footer-second-box {
@@ -636,6 +675,8 @@ font-weight: 500;
 line-height: 1.5; 
 letter-spacing: 0.02em;
 margin-bottom: 16px;
+/* text-align: left; */
+text-align: center;
 }
 
 .footer-soc-link {
@@ -643,7 +684,6 @@ display: flex;
 gap: 16px;
 justify-content: center;
 align-items: center;
-padding-top: 16px;
 }
 
 .footer-soc-link-item {
@@ -678,8 +718,6 @@ width: 100%;
 
 .footer-third-box { 
     /* margin-left: 80px; */
-    /* for mob */
-    
 }
 
 
@@ -690,14 +728,15 @@ width: 100%;
         line-height: 1.5;
         letter-spacing: 0.02em;
         margin-bottom: 16px;
+        text-align: center;
 }
 
 .footer-form {
     display: flex;
-    gap: 24px;
     /* for mob */
     flex-direction: column;
     gap: 16px;
+    align-items: center;
 }
 
 .footer-input {
@@ -713,6 +752,7 @@ width: 100%;
     padding-left: 16px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     color: #FFF;
+    opacity: 0.6;
 }
 
 .footer-input::placeholder {
@@ -811,7 +851,6 @@ width: 100%;
 }
 
 .modal-text {
-    width: 360px;
     color: #2E2F42;
     text-align: center;
     font-size: 16px;
@@ -932,6 +971,8 @@ width: 100%;
         font-size: 12px;
         line-height: 1.17;
         letter-spacing: 0.04em;
+        display: flex;
+        align-items: center;
 }
 
 .check-text-link {
@@ -982,6 +1023,10 @@ width: 100%;
             display: flex;
         }
 
+        .header-address-link {
+            font-size: 12px;
+        }
+
         .header-icon-open {
             display: none;
         }
@@ -1030,7 +1075,43 @@ width: 100%;
             font-weight: 700;
             line-height: 1.07;
             margin-bottom: 36px;
+            max-width: 496px;
         }
+
+        .footer-container {
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 584px;
+            gap: 72px 24px;
+            align-items: baseline;
+        }
+
+        .footer-logo {
+            text-align: left;
+        }
+
+        .footer-text {
+            max-width: 264px;
+        }
+
+        .footer-second-box-text {
+            text-align: left;
+        }
+
+        .footer-soc-link {
+            padding-top: 16px;
+        }
+
+        .footer-form {
+            flex-direction: row;
+                gap: 24px;
+        }
+
+        .footer-form-description {
+            text-align: left;
+        }
+
+
 
         .modal {
             width: 408px;
@@ -1038,20 +1119,27 @@ width: 100%;
         }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1439px) {
+@media screen and (min-width: 768px) and (max-width: 1157px) {
     .header-address-list {
         flex-direction: column;
         gap: 12px;
     }
+
+
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1158px) {
     .container {
-            max-width: 1440px;
+            max-width: 1158px;
         }
 
+                .header-address-link {
+                    font-size: 16px;
+                }
+
                 .benefits {
-                    padding: 120px 0 120px;
+                    padding-top: 120px;
+                    padding-bottom: 120px;
                 }
 
                 .benefits-icon {
@@ -1096,6 +1184,10 @@ width: 100%;
                     background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/dark-bg-laptop.jpg);
                 }
 
+                .hero-text {
+
+                }
+
                                 @media (min-resolution: 192dpi) {
                                     .hero {
                                         background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
@@ -1115,5 +1207,14 @@ width: 100%;
                 }
                 .footer-container {
                     align-items: baseline;
+                    flex-wrap: nowrap;
+                }
+                
+                .footer-first-box {
+                    margin-right: 120px;
+                }
+
+                .footer-third-box {
+                    margin-left: 80px;
                 }
 }

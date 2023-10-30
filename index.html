@@ -67,7 +67,7 @@
           </button>
           <ul mob class="mob-list">
             <li class="mob-list-item">
-              <a href="./index.html" class="mob-list-link">Studio</a>
+              <a href="./index.html" class="mob-list-link mob-studio">Studio</a>
             </li>
             <li class="mob-list-item">
               <a href="" class="mob-list-link">Portfolio</a>
@@ -80,13 +80,15 @@
         <div class="mob-second-box">
           <ul class="mob-address-list">
             <li class="mob-address-item">
-              <a class="mob-address-link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
+              <a
+                class="mob-address-link mob-phone-link"
+                href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
               >
             </li>
             <li class="mob-address-item">
-              <a class="mob-address-link" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
+              <a class="mob-address-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
               >
             </li>
           </ul>
@@ -186,7 +188,7 @@
         </div>
       </section>
       <section class="team">
-        <div class="container">
+        <div class="container team-container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
             <li class="team-item">
@@ -746,7 +748,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
         <button type="button" class="modal-btn">
           <svg class="modal-btn-icon" width="8" height="8">
@@ -814,14 +816,16 @@
               value="true"
               class="check-input visually-hidden"
             />
-            <label for="user-privacy" class="check-text"
-              ><span class="privacy-span">
+            <label for="user-privacy" class="check-text">
+              <span class="privacy-span">
                 <svg class="privacy-icon" width="10" height="8">
-                  <use
-                    href="./images/icons.svg#icon-madal-check"
-                  ></use></svg></span
-              >I accept the terms and conditions of the
-              <a href="" class="check-text-link">Privacy Policy</a></label
+                  <use href="./images/icons.svg#icon-madal-check"></use>
+                </svg>
+              </span>
+              <p>
+                I accept the terms and conditions of the
+                <a href="" class="check-text-link">Privacy Policy</a>
+              </p></label
             >
           </div>
           <button type="submit" class="button-send">Send</button>
