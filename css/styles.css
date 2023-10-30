@@ -1081,7 +1081,6 @@ width: 100%;
         .footer-container {
             flex-direction: row;
             flex-wrap: wrap;
-            width: 584px;
             gap: 72px 24px;
             align-items: baseline;
         }
@@ -1123,6 +1122,10 @@ width: 100%;
     .header-address-list {
         flex-direction: column;
         gap: 12px;
+    }
+
+    .footer-container {
+        width: 584px;
     }
 
 
@@ -1212,6 +1215,9 @@ width: 100%;
                 
                 .footer-first-box {
                     margin-right: 120px;
+                }
+
+                .footer-text {
                 }
 
                 .footer-third-box {
