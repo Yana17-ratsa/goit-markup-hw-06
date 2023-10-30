@@ -82,7 +82,8 @@ address {
 }
 
 .header-list {
-    display: flex;
+    /* display: flex; */
+    display: none;
     gap: 40px;
 }
 
@@ -127,7 +128,8 @@ address {
 }
 
 .header-address-list {
-    display: flex;
+    /* display: flex; */
+    display: none;
     gap: 40px;
 }
 
@@ -147,19 +149,124 @@ address {
     color: #404BBF;
 }
 
+
+.mob-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: #FFF;
+    padding: 24px 24px 40px 16px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: auto;
+}
+
+.mob-first-box {
+}
+
+.mob-menu-btn {
+    display: block;
+    margin-left: auto;
+    margin-bottom: 24px;
+}
+
+.mob-btn-icon {}
+
+.mob-list {
+    margin-bottom: 50px;
+}
+
+.mob-list-item:not(:last-child){
+    margin-bottom: 40px;
+}
+
+.mob-second-box {
+    margin-top: auto;
+}
+
+.mob-address-list {
+    display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+        margin-bottom: 48px;
+}
+
+.mob-address-item {}
+
+.mob-address-link {
+    color:  #434455;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+}
+
+.mob-list-link {
+    color:  #2E2F42;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.1;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+}
+
+.mob-soc-link {
+    display: inline-flex;
+        align-items: flex-start;
+        gap: 40px;
+}
+
+.mob-soc-link-item {
+    width: 40px;
+        height: 40px;
+        flex-shrink: 0;
+        background-color: #4D5AE5;
+        border-radius: 50%;
+}
+
+.mob-link {
+    width: 100%;
+        height: 100%;
+        background-color: #4d5ae5;
+        border-radius: 50%;
+        display: flex;
+            align-items: center;
+            justify-content: center;
+}
+
+
+
+.mob-svg {
+    fill: #F4F4FD;
+}
+
 /**================*/
 
 /**========HERO========*/
 
 .hero {
     background-color:  #2E2F42;
-    padding: 188px 0 188px;
-    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg.jpg);
+    padding: 72px 16px;
+    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg-mob.jpg);
     background-position: center;
     background-repeat: no-repeat;
     max-width: 1440px;
     background-size: cover;
     margin: 0 auto;
+}
+
+@media (min-resolution: 192dpi) {
+    .hero {
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/Dark-bg-mob-2x.jpg);
+    }
 }
 
 .hero-container {
@@ -168,20 +275,20 @@ address {
 .hero-text {
     color:  #FFF;
         text-align: center;
-        font-size: 56px;
+        font-size: 36px;
         font-weight: 700;
-        line-height: 1.07;
+        line-height: 1.11;
         letter-spacing: 0.02em;
         max-width: 496px;
         margin-right: auto;
         margin-left: auto;
-        margin-bottom: 48px;
+        margin-bottom: 72px;
 }
 
 .hero-btn {
     cursor: pointer;
     background-color: #4D5AE5;
-    color:  #FFF;
+    color: #FFF;
         font-size: 16px;
         font-weight: 500;
         line-height: 1.5;
@@ -303,7 +410,6 @@ address {
 
 .team-item {
     background-color: #FFFFFF;
-    width: 100%;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
@@ -780,7 +886,7 @@ width: 100%;
 }
 
 .modal-textarea::placeholder {
-    color:  rgba(46, 47, 66, 0.40);=
+    color:  rgba(46, 47, 66, 0.40);
         font-size: 12px;
         line-height: 1.17;
         letter-spacing: 0.04em;
@@ -861,6 +967,20 @@ width: 100%;
         max-width: 768px;
     }
 
+        .header-list {
+            display: flex;
+        }
+
+        .header-address-list {
+            display: flex;
+        }
+
+        .mob-menu {
+            display: none;
+        }
+
+    
+
         .benefits-list {
             gap: 72px 24px;
         }
@@ -882,6 +1002,25 @@ width: 100%;
 
         .portfolio-item {
             width: calc((100% - 24px) / 2);
+        }
+
+        .hero {
+            padding: 112px 0 112px;
+            background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg-tablet.jpg);
+        }
+
+                @media (min-resolution: 192dpi) {
+                    .hero {
+                        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                            url(../images/Dark-bg-tablet-2x.jpg);
+                    }
+                }
+
+        .hero-text {
+            font-size: 56px;
+            font-weight: 700;
+            line-height: 1.07;
+            margin-bottom: 36px;
         }
 }
 
@@ -929,5 +1068,24 @@ width: 100%;
 
                 .portfolio-item {
                     width: calc((100% - 48px) / 3); 
+                }
+                
+                .hero {
+                    padding: 188px 0 188px;
+                    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/dark-bg-laptop.jpg);
+                }
+
+                                @media (min-resolution: 192dpi) {
+                                    .hero {
+                                        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                                            url(../images/Dark-bg-laptop-2x.jpg);
+                                    }
+                                }
+
+                .hero-text {
+                    font-size: 56px;
+                    font-weight: 700;
+                    line-height: 1.07;
+                    margin-bottom: 48px;
                 }
 }
