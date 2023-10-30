@@ -585,16 +585,17 @@ li .container {
 
 .footer {
     background-color: #2E2F42;
-    padding: 100px 0 100px;
+    padding: 96px 16px;
 }
 
 .footer-container {
-display: flex;
-align-items: baseline;
+    display: flex;
+    /* align-items: baseline; */
+    /* for mob */
+    flex-direction: column;
+    gap: 72px;
 }
 
-.footer-container{
-}
 .footer-first-box {
     margin-right: 120px;
 }
@@ -609,6 +610,7 @@ align-items: baseline;
         text-transform: uppercase;
         display: inline-block;
         margin-bottom: 16px;
+
 
 }
 
@@ -675,7 +677,9 @@ width: 100%;
 
 
 .footer-third-box { 
-    margin-left: 80px;
+    /* margin-left: 80px; */
+    /* for mob */
+    
 }
 
 
@@ -691,6 +695,9 @@ width: 100%;
 .footer-form {
     display: flex;
     gap: 24px;
+    /* for mob */
+    flex-direction: column;
+    gap: 16px;
 }
 
 .footer-input {
@@ -753,8 +760,8 @@ width: 100%;
 }
 
 .modal {
-    width: 408px;
-    min-height: 584px;
+    width: 288px;
+    min-height: 623px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -975,11 +982,13 @@ width: 100%;
             display: flex;
         }
 
-        .mob-menu {
+        .header-icon-open {
             display: none;
         }
 
-    
+        .mob-menu {
+            display: none;
+        }
 
         .benefits-list {
             gap: 72px 24px;
@@ -1022,6 +1031,18 @@ width: 100%;
             line-height: 1.07;
             margin-bottom: 36px;
         }
+
+        .modal {
+            width: 408px;
+            min-height: 584px;
+        }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+    .header-address-list {
+        flex-direction: column;
+        gap: 12px;
+    }
 }
 
 @media screen and (min-width: 1440px) {
@@ -1087,5 +1108,12 @@ width: 100%;
                     font-weight: 700;
                     line-height: 1.07;
                     margin-bottom: 48px;
+                }
+
+                .footer {
+                    padding: 100px 0 100px;
+                }
+                .footer-container {
+                    align-items: baseline;
                 }
 }
