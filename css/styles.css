@@ -428,7 +428,7 @@ address {
 
 @media screen  and (min-width: 320px) and (max-width:767px) {
     .team-container {
-        width: 296px;
+        width: 296px;   
     }
 }
 
@@ -637,6 +637,8 @@ li .container {
 }
 
 .footer-first-box {
+    display: flex;
+    flex-direction: column;
 }
 
 .footer-logo {
@@ -1037,7 +1039,7 @@ width: 100%;
 
         .benefits-list {
             gap: 72px 24px;
-            flex-wrap: nowrap;
+            flex-wrap: wrap;
         }
         .benefits-item {
             flex-basis: calc((100% - 24px) / 2); 
@@ -1048,7 +1050,6 @@ width: 100%;
         }
 
         .team-container {
-            width: 584px;
         }
 
         .team-list {
@@ -1137,6 +1138,10 @@ width: 100%;
         width: 584px;
     }
 
+    .team-container {
+        width: 584px;
+    }
+
 
 }
 
@@ -1160,6 +1165,7 @@ width: 100%;
 
                 .benefits-list {
                     gap: 24px;
+                    flex-wrap: nowrap;
                 }
         
                 .benefits-item {
