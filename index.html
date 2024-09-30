@@ -31,10 +31,10 @@
               <a href="./index.html" class="header-list-link current">Studio</a>
             </li>
             <li class="header-list-item">
-              <a href="" class="header-list-link">Portfolio</a>
+              <a href="#portfolioId" class="header-list-link">Portfolio</a>
             </li>
             <li class="header-list-item">
-              <a href="" class="header-list-link">Contacts</a>
+              <a href="#contactsId" class="header-list-link">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -70,7 +70,7 @@
               <a href="./index.html" class="mob-list-link mob-studio">Studio</a>
             </li>
             <li class="mob-list-item">
-              <a href="" class="mob-list-link">Portfolio</a>
+              <a href="#portfolioId" class="mob-list-link">Portfolio</a>
             </li>
             <li class="mob-list-item">
               <a href="" class="mob-list-link">Contacts</a>
@@ -425,7 +425,7 @@
       </section>
       <section class="portfolio">
         <div class="container">
-          <h2 class="portfolio-title">Our Portfolio</h2>
+          <h2 id="portfolioId" class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
             <li class="portfolio-item">
               <div class="overlay-img-wrap">
@@ -683,7 +683,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer id="contactsId" class="footer">
       <div class="container footer-container">
         <div class="footer-first-box">
           <a href="./index.html" class="footer-logo"
@@ -748,7 +748,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
         <button type="button" class="modal-btn">
           <svg class="modal-btn-icon" width="8" height="8">
@@ -832,5 +832,6 @@
         </form>
       </div>
     </div>
+    <script src="./index.js"></script>
   </body>
 </html>
